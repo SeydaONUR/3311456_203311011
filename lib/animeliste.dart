@@ -243,21 +243,22 @@ class _animelisteState extends State<animeliste> {
               ),
             ),
           ),
-          Row(
-            children: [
-              onizukaliste(),
-              firefliesliste(),
-              erasedliste()
-            ],
+          Padding(padding: EdgeInsets.only(top:70),
+            child: Expanded(
+              child:Row(
+                children: [
+                  onizukaliste(),
+                  firefliesliste(),
+                  erasedliste(),
+                  totoroliste(),
+                  pokemonliste(),
+                  fullmetalliste(),
+                ],
+              ),
+            ),
           ),
 
-          Row(
-            children: [
-              totoroliste(),
-              pokemonliste(),
-              fullmetalliste(),
-            ],
-          ),
+
 
         ],
       ),
